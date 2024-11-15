@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ATM Machine</title>
+</head>
+
+<body>
+
+    <section id="atm_machine">
+        <div class="styling">
+        </div>
+        <div class="main_machine">
+            <div class="screen" id="main_screen">
+                <h1 id="transaction">Select your transaction</h1>
+
+
+                <!-- Transaction Options -->
+
+
+                <div id="buttons">
+                    <div class="left_btn">
+                        <button onclick="userBalance()">Balance Inquiry</button>
+                        <button onclick="moneyTransfer()">Money Transfer</button>
+                        <button onclick="withdrawal()">Cash Withdrawal</button>
+                    </div>
+                    <div class="right_btn">
+                        <button onclick="details()">Details</button>
+                        <button onclick="pinChange()">PIN Change</button>
+                        <button onclick="otherTransactions()">Others</button>
+                    </div>
+                </div>
+
+
+
+                <!-- Input Userpin  -->
+
+
+                <div id="input_user">
+                    <img src="./assets/mk_bank.png" width="70px">
+                    <p>Welcome to MK bank! Please enter your 4-digit PIN to process</p>
+                    <input type="text" id="user_pin" maxlength="4">
+                    <h5 id="pinError"></h5>
+                </div>
+                
+
+
+                <!-- Withdrawal Amount Section -->
+
+
+
+                <div id="withdrawal_section" style="display: none;">
+                    <p>Enter amount to withdraw (between 500 - 50000):</p>
+                    <input type="text" id="withdrawal_amount">
+                    <h5 id="withdrawalError" style="color: red;"></h5>
+                </div>
+                
+
+
+               <!--  User balance and details display -->
+
+
+                <div id="display">
+                    <h5>Name: ABC Customer</h5>
+                    <h5>Branch Code: 1056</h5>
+                    <h5>Account No: 2313-XXXX-XXXX-XX</h5>
+                    <h5>NIC No: 1001-0980-XXX-XX-X</h5>
+                    <h3 id="userBalShow"></h3>
+                    <p id="date">Date: </p>
+                </div>
+            </div>
+
+
+
+            <!-- Key pad Option -->
+
+
+            <div class="key_pad">
+                <div id="num_pad">
+                    <button value="1" class="numKeys">1</button>
+                    <button value="2" class="numKeys">2</button>
+                    <button value="3" class="numKeys">3</button>
+                    <button value="4" class="numKeys">4</button>
+                    <button value="5" class="numKeys">5</button>
+                    <button value="6" class="numKeys">6</button>
+                    <button value="7" class="numKeys">7</button>
+                    <button value="8" class="numKeys">8</button>
+                    <button value="9" class="numKeys">9</button>
+                    <button value="0" class="numKeys">0</button>
+                    <button id="clear" onclick="clearBtn()" style="background-color: rgb(204, 213, 26);">CLEAR</button>
+                </div>
+                <div id="special_btn">
+                    <button id="enter" onclick="enterBtn()" style="background-color: green;">ENTER</button>
+                    <button id="cancel" onclick="cancelBtn()" style="background-color: rgb(230, 17, 17);">CANCEL</button>
+                    <button style="padding: 0.4rem 0 ; font-weight: 800; background-color: #ccc;">_____</button>
+                </div>
+            </div>
+
+
+
+            <!-- Below Section -->
+
+
+            <div class="money">
+            </div>
+            <div class="money_box" id="money_boxx">
+            </div>
+            <div class="money">
+            </div>
+
+        </div>
+    </section>
+
+
+    <h2 style="color: #ccc;">Developed by: Mahanoor Khan</h2>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

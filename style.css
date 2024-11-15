@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  background-image: url("./assets/background2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#atm_machine {
+  height: 90vh;
+  width: 32vw;
+  background-color: rgb(50, 50, 50);
+  border: 5px solid black;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+}
+#atm_machine .styling{
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+#atm_machine .main_machine .screen {
+  width: 88%;
+  height: 35vh;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(138, 197, 249);
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+}
+
+#transaction {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  display: none;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+#buttons .left_btn,
+#buttons .right_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#buttons button {
+  all: unset;
+  margin: 1.5rem 0;
+  background-color: aliceblue;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(215, 237, 255);
+  }
+}
+
+#input_user {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#input_user p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(27, 27, 27);
+  margin-bottom: 1rem;
+}
+
+#input_user input {
+  all: unset;
+  background-color: aliceblue;
+  border: 2px solid rgb(0, 19, 42);
+  padding: 0.4rem 2rem;
+  border-radius: 1rem;
+}
+
+#display {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+    display: none;
+  }
+
+#withdrawal_section {
+  height: 100%;
+  width: 60%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#withdrawal_section p {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#withdrawal_section input {
+  all: unset;
+  background-color: aliceblue;
+  border: 2px solid rgb(0, 19, 42);
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+.key_pad {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 22vh;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+#num_pad {
+  width: 70%;
+  height: 23vh;
+  background-color: rgb(93, 93, 93);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+}
+
+#num_pad button {
+  all: unset;
+  padding: 0.2rem 0.5rem;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+#special_btn {
+  width: 30%;
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#special_btn button {
+  all: unset;
+  padding: 0.3rem 0.5rem;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0.5rem;
+}
+#atm_machine .money{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #000000;
+    margin: 1.5rem 0;
+}
+#atm_machine .money_box{
+    height: 0.9rem;
+    width: 30%;
+    background-color: #000000;
+    margin: 0 auto;
+    border: 3px solid green;
+}
+#atm_machine .money_box img{
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+}
